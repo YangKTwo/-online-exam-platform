@@ -163,12 +163,6 @@ pnpm dev
 
 默认通过 Vite 代理将 `/api` 请求转发到 `http://localhost:8080` 网关。
 
-## 环境变量说明
-
-> 当前仓库未提供标准 `.env.example`，建议你在开源前补充。  
-> 下表为根据代码扫描得到的关键配置项。
-
-### 前端（建议写入 `.env` / `.env.development`）
 
 | 变量名            | 说明            | 示例值                       |
 | -------------- | ------------- | ------------------------- |
@@ -227,11 +221,6 @@ mvn clean package -DskipTests
 ```
 
 按模块部署各服务 Jar，并保证 MySQL/Redis/Nacos 可访问。
-
-### Docker 说明
-
-- 当前仓库未检测到 `Dockerfile` 与 `docker-compose.yml`。
-- 建议后续补充容器化编排（网关 + 各微服务 + MySQL + Redis + Nacos）。
 
 ### Nginx 反向代理示例（前后端分离）
 
